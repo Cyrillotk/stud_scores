@@ -24,11 +24,16 @@ for( const score of scores){
 console.log("highest score",highest);
 console.log("lowest score",lowest);
 
-let passed = scores[0];
-let failed = scores[0];
+let passed = 0;
+let failed = 0;
 
 for (const score of scores){
   if (score >= 10){
-    
+    passed++;
+  }
+  else{
+    failed++;
   }
 }
+console.log("Students passed",passed);
+console.log("Students failed",failed);
